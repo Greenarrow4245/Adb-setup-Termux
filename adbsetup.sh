@@ -22,7 +22,7 @@ exec_first_time() {
 
         adb pair "$ip:$port"
         sleep 1
-        read -p "Enter the ip" ip_2
+        read -p "Enter the ip: " ip_2
         read -p "Enter port for the second connection: " port_2
         adb connect "$ip_2:$port_2"
         sleep 2
